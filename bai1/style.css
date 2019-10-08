@@ -250,3 +250,9 @@ body {
     background: #6292cb;
     margin: 15px 5px;
 }
+
+#footer {
+    height: 100px;
+    width: 1024px;
+    background: #ff1a1a;
+}
