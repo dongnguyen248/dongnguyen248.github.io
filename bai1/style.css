@@ -1,0 +1,252 @@
+* {
+    margin: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix::after {
+    clear: both;
+    content: ".";
+    visibility: hidden;
+    display: block;
+}
+
+.header-wrapper {
+    width: 1024px;
+    background: #ebeb;
+    margin: 0px auto;
+}
+
+#logo-header {
+    width: 290px;
+    background: red;
+    float: left;
+    padding: 10px 15px;
+}
+
+#seaching {
+    width: 240px;
+    background: blue;
+    float: left;
+    padding: 10px 15px;
+}
+
+#hot-line {
+    width: 200px;
+    background: green;
+    float: left;
+    padding: 10px 15px;
+}
+
+#content-tex {
+    width: 180px;
+    background: violet;
+    float: left;
+    padding: 10px 15px;
+}
+
+.menu {
+    width: 1024px;
+    background: yellowgreen;
+    margin: 0px auto;
+}
+
+#Menu1 {
+    /* position: relative; */
+    height: 32px;
+    white-space: nowrap;
+    display: table-cell;
+    border-top: 3px solid #6292cb;
+    padding: 7px 15px;
+}
+
+#Menu2 {
+    /* position: relative; */
+    height: 32px;
+    white-space: nowrap;
+    display: table-cell;
+    border-top: 3px solid #b3ff66;
+    padding: 7px 15px;
+}
+
+#Menu3 {
+    /* position: relative; */
+    height: 32px;
+    white-space: nowrap;
+    display: table-cell;
+    border-top: 3px solid yellow;
+    padding: 7px 15px;
+}
+
+#Menu4 {
+    /* position: relative; */
+    height: 32px;
+    white-space: nowrap;
+    display: table-cell;
+    border-top: 3px solid pink;
+    padding: 7px 15px;
+}
+
+#Menu5 {
+    /* position: relative; */
+    height: 32px;
+    white-space: nowrap;
+    display: table-cell;
+    border-top: 3px solid #ccff33;
+    padding: 7px 15px;
+}
+
+#Menu6 {
+    /* position: relative; */
+    height: 32px;
+    white-space: nowrap;
+    display: table-cell;
+    border-top: 3px solid #326ceb;
+    padding: 7px 15px;
+}
+
+#Menu7 {
+    /* position: relative; */
+    height: 32px;
+    white-space: nowrap;
+    display: table-cell;
+    border-top: 3px solid #ff33bb;
+    padding: 7px 15px;
+}
+
+#Menu8 {
+    /* position: relative; */
+    height: 32px;
+    white-space: nowrap;
+    display: table-cell;
+    border-top: 3px solid #a2d4fd;
+    padding: 7px 15px;
+}
+
+.main {
+    width: 1024px;
+    background: #A9A9A9;
+    margin: 0px auto;
+}
+
+#logo-quangcao {
+    width: 1024px;
+    height: 90px;
+    background: #6666ff;
+}
+
+.first-section {
+    width: 1024px;
+    background: #B8860B;
+}
+
+.left-col {
+    width: 724px;
+    float: left;
+    background: #9400D3;
+}
+
+#row-first {
+    width: 724px;
+    height: 500px;
+    background: #98FB98;
+    margin: 5px 0px;
+}
+
+.article-first {
+    width: 151px;
+    float: left;
+    height: 50px;
+    background: #DB7093;
+    /* padding: 0px 15px; */
+    margin: 5px 15px;
+}
+
+.article-two {
+    width: 151px;
+    float: left;
+    height: 50px;
+    background: rgb(180, 112, 219);
+    /* padding: 0px 15px; */
+    margin: 5px 15px;
+}
+
+.article-three {
+    width: 151px;
+    float: left;
+    height: 50px;
+    background: #cccc00;
+    /* padding: 0px 15px; */
+    margin: 5px 15px;
+}
+
+.article-fourd {
+    width: 151px;
+    float: left;
+    height: 50px;
+    background: #FF4500;
+    margin: 5px 15px;
+}
+
+.article-five {
+    width: 151px;
+    float: left;
+    height: 50px;
+    background: #FF69B4;
+    margin: 5px 15px;
+}
+
+.article-six {
+    width: 151px;
+    float: left;
+    height: 50px;
+    background: #00e600;
+    margin: 5px 15px;
+}
+
+.article-seven {
+    width: 151px;
+    float: left;
+    height: 50px;
+    background: #0066ff;
+    margin: 5px 15px;
+}
+
+.article-eight {
+    width: 151px;
+    float: left;
+    height: 50px;
+    background: #77b300;
+    margin: 5px 15px;
+}
+
+.right-col {
+    width: 300px;
+    float: left;
+    background: #A0522D;
+}
+
+.right-article1 {
+    width: 290px;
+    float: left;
+    background: #6292cb;
+    margin: 15px 5px;
+}
+
+.second-section {
+    width: 1024px;
+    height: 476px;
+    background: #b30059;
+}
+
+.right-second-section {
+    width: 290px;
+    height: 290px;
+    float: left;
+    background: #6292cb;
+    margin: 15px 5px;
+}
