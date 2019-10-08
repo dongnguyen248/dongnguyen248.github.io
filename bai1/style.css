@@ -252,6 +252,7 @@ body {
 }
 
 #footer {
+    margin: 0px auto;
     height: 100px;
     width: 1024px;
     background: #ff1a1a;
