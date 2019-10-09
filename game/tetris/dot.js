@@ -8,6 +8,9 @@ class dot {
     moveLeft() {
 
     }
+    moveRight() {
+
+    }
     fall() {
 
     }
@@ -17,8 +20,8 @@ class dot {
     draw() {
         let x = this.col * this.size;
         let y = this.row * this.size;
-        this.game.contex.fillStyle = '#ff0000';
-        this.game.contex.fillRect(x, y, this.size, this.size);
+        this.game.context.fillStyle = '#ff0000';
+        this.game.context.fillRect(x + 1, y + 1, this.size - 2, this.size);
 
     }
 }

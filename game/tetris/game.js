@@ -1,5 +1,3 @@
-const GAME_WIDTH = 200;
-const GAME_HEIGHT = 200;
 class game {
     constructor() {
         this.canvas = null;
@@ -14,9 +12,11 @@ class game {
         document.body.appendChild(this.canvas);
         this.canvas.width = GAME_WIDTH;
         this.canvas.height = GAME_HEIGHT;
+        //creat a new board
+        this.b = new board(this);
         //this test
-        this.d = new dot(this, 5, 6)
-            // start the game loop
+
+        // start the game loop
         this.loop();
 
 
@@ -32,8 +32,7 @@ class game {
 
     }
     draw() {
-
-        this.d.draw();
+        this.b.draw()
 
     }
 }
