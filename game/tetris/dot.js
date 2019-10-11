@@ -11,7 +11,21 @@ class dot {
     moveRight() {
 
     }
+    hitBottom() {
+        return this.row == NUM_ROWs - 1;
+
+    }
+    canFall() {
+        if (this.hitBottom) return false;
+        if (!this.game.board.isEmtyCell(this.row + 1, this.col)) {
+            return false;
+        }
+        return true;
+    }
     fall() {
+        if (this.canFall) {
+            this.row++;
+        }
 
     }
     update() {

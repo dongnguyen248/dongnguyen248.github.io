@@ -15,11 +15,17 @@ class game {
         //creat a new board
         this.b = new board(this);
         //this test
-
+        this.d = new dot(this, 5, 6);
         // start the game loop
         this.loop();
+        // start the game
+        this.startGame();
 
-
+    }
+    startGame() {
+        setInterval(() => {
+            this.d.fall();
+        }, 1000);
     }
     loop() {
         console.log('loop')
@@ -33,6 +39,7 @@ class game {
     }
     draw() {
         this.b.draw()
+        this.d.draw();
 
     }
 }
