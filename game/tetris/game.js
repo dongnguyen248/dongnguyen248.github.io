@@ -19,18 +19,22 @@ class game {
         this.listenKeyboard();
         // creat the brick
         this.brick = new brick(this);
-        // start the game loop
-        this.loop();
+
         // start the game
         this.startGame();
-
+        // start the game loop
+        this.loop();
     }
 
 
     startGame() {
         setInterval(() => {
             this.brick.fall();
-        }, 1000);
+        }, 500);
+    }
+    creatNewBrick() {
+        this.brick = new brick(this);
+
     }
     listenKeyboard() {
         document.addEventListener('keydown', (event) => {
@@ -45,7 +49,7 @@ class game {
                     this.brick.moveDown();
                     break;
                 case "ArrowUp":
-
+                    this.brick.rotate();
                     break;
             }
         })

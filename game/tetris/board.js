@@ -1,4 +1,5 @@
 class board {
+
     constructor(game) {
         this.game = game;
         this.data = [
