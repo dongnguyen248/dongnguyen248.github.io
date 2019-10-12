@@ -107,7 +107,7 @@ class brick {
             } else {
                 this.game.creatNewBrick();
                 this.appendToBoard();
-                this.game.board.checkFullRow();
+                this.game.b.checkFullRow();
             }
 
         }
