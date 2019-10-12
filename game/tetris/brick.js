@@ -107,6 +107,7 @@ class brick {
             } else {
                 this.game.creatNewBrick();
                 this.appendToBoard();
+                this.game.board.checkFullRow();
             }
 
         }
@@ -132,23 +133,22 @@ class brick {
                 newRow.push(this.data[row][col]);
             }
             newData.push(newRow);
-            console.log(this.newRow);
         }
-        // check new data valid
-        // let isNewDataValid = true;
-        // for (let newRow = 0; newRow < this.data.length; newRow++) {
-        //     for (let newCol = 0; newCol < newData[0].length; newCol++) {
-        //         if (newData[newRow][newCol] == x && !this.game.b.isEmptyCell(newRow, newCol)) {
-        //             isNewDataValid = false;
-        //         }
-        //     }
-        // }
-        // if (isNewDataValid) {
-
-        this.data = newData;
-        this.createDots();
-
-        // }
+        //  check new data valid
+        let isNewDataValid = true;
+        for (let newRow = 0; newRow < newData.length; newRow++) {
+            for (let newCol = 0; newCol < newData[0].length; newCol++) {
+                if (newData[newRow][newCol] == x &&
+                    !this.game.b.isEmptyCell(newRow, newCol)
+                ) {
+                    isNewDataValid = false;
+                }
+            }
+        }
+        if (isNewDataValid) {
+            this.data = newData;
+            this.createDots()
+        }
 
 
 

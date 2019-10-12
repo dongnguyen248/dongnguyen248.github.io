@@ -32,6 +32,12 @@ class board {
     isEmptyCell(row, col) {
         return this.data[row][col] == _;
     }
+    checkFullRow() {
+
+    }
+    clearRow() {
+
+    }
     draw() {
         let dots = [];
         for (let row = 0; row < NUM_ROWS; row++) {
@@ -40,6 +46,7 @@ class board {
                     let newDot = new dot(this.game, row, col);
                     dots.push(newDot);
                 }
+
             }
 
         }

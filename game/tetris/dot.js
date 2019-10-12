@@ -26,7 +26,7 @@ class dot {
     }
     canRight() {
         if (this.hitRight()) return false;
-        if (!this.game.b.isEmptyCell(this.row, this.col + 1)) {
+        if (!this.game.b.isEmptyCell(this.row, this.col - 1)) {
             return false;
         }
         return true;
