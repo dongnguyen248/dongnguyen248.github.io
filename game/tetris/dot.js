@@ -5,25 +5,51 @@ class dot {
         this.row = row;
         this.col = col;
     }
+    hitLeft() {
+        return this.col == 0;
+    }
+    canLeft() {
+        if (this.hitLeft()) return false;
+        if (!this.game.b.isEmptyCell(this.row, this.col - 1)) {
+            return false;
+        }
+        return true;
+
+    }
     moveLeft() {
+        if (this.canLeft()) {
+            this.col--;
+        }
+    }
+    hitRight() {
+        return this.col == NUM_COL - 1;
+    }
+    canRight() {
+        if (this.hitRight()) return false;
+        if (!this.game.b.isEmptyCell(this.row, this.col + 1)) {
+            return false;
+        }
+        return true;
 
     }
     moveRight() {
-
+        if (this.canRight()) {
+            this.col++;
+        }
     }
     hitBottom() {
-        return this.row == NUM_ROWs - 1;
+        return this.row == NUM_ROWS - 1;
 
     }
     canFall() {
-        if (this.hitBottom) return false;
-        if (!this.game.board.isEmtyCell(this.row + 1, this.col)) {
+        if (this.hitBottom()) return false;
+        if (!this.game.b.isEmptyCell(this.row + 1, this.col)) {
             return false;
         }
         return true;
     }
     fall() {
-        if (this.canFall) {
+        if (this.canFall()) {
             this.row++;
         }
 

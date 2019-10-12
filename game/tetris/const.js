@@ -5,4 +5,4 @@ const NUM_COL = 10;
 
 
 const GAME_WIDTH = 200;
-const GAME_HEIGHT = 200;
+const GAME_HEIGHT = 400;
