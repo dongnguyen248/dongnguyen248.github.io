@@ -12,12 +12,13 @@ class game {
         document.body.appendChild(this.canvas);
         this.canvas.width = GAME_WIDTH;
         this.canvas.height = GAME_HEIGHT;
+
         //creat a new board
         this.b = new board(this);
         //get keyboard
         this.listenKeyboard();
-        //this test
-        this.d = new dot(this, 0, 6);
+        // creat the brick
+        this.brick = new brick(this);
         // start the game loop
         this.loop();
         // start the game
@@ -28,24 +29,29 @@ class game {
 
     startGame() {
         setInterval(() => {
-            this.d.fall();
+            this.brick.fall();
         }, 1000);
     }
     listenKeyboard() {
         document.addEventListener('keydown', (event) => {
             switch (event.code) {
                 case "ArrowLeft":
-                    this.d.moveLeft();
+                    this.brick.moveLeft();
                     break;
                 case "ArrowRight":
-                    this.d.moveRight();
+                    this.brick.moveRight();
                     break;
                 case "ArrowDown":
+                    this.brick.moveDown();
                     break;
                 case "ArrowUp":
+
                     break;
             }
         })
+
+    }
+    creatBreack() {
 
     }
     loop() {
@@ -64,8 +70,8 @@ class game {
     }
     draw() {
         this.clearScreen();
-        this.b.draw()
-        this.d.draw();
+        this.b.draw();
+        this.brick.draw();
 
     }
 }
