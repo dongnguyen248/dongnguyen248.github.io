@@ -35,6 +35,7 @@ class board {
     isRowFull(row) {
         let full = true;
         for (let col = 0; col < NUM_COL; col++) {
+            console.log(col);
             if (this.isEmptyCell(row, col)) {
                 return false;
             }
@@ -45,6 +46,7 @@ class board {
         for (let row = NUM_ROWS; row >= 0; row--) {
             if (this.isRowFull(row)) {
                 this.clearRow(row);
+
             }
 
         }

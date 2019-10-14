@@ -22,6 +22,7 @@ class game {
 
         // start the game
         this.startGame();
+        this.pauseGame();
         // start the game loop
         this.loop();
     }
@@ -31,6 +32,9 @@ class game {
         setInterval(() => {
             this.brick.fall();
         }, 500);
+    }
+    pauseGame() {
+        this.brick.stopFall();
     }
     creatNewBrick() {
         this.brick = new brick(this);

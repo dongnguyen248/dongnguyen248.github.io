@@ -99,17 +99,20 @@ class brick {
         }
         // how can brick fall
     fall() {
-            if (this.canFall()) {
-                this.row++;
-                this.dots.forEach((dot) => {
-                    dot.fall()
-                });
-            } else {
-                this.game.creatNewBrick();
-                this.appendToBoard();
-                this.game.b.checkFullRow();
-            }
+        if (this.canFall()) {
+            this.row++;
+            this.dots.forEach((dot) => {
+                dot.fall()
+            });
+        } else {
+            this.game.creatNewBrick();
+            this.appendToBoard();
+            this.game.b.checkFullRow();
+        }
 
+    }
+    stopFall() {
+            this.canFall(false);
         }
         //move brick down faster
     moveDown() {
@@ -139,7 +142,7 @@ class brick {
         for (let newRow = 0; newRow < newData.length; newRow++) {
             for (let newCol = 0; newCol < newData[0].length; newCol++) {
                 if (newData[newRow][newCol] == x &&
-                    !this.game.b.isEmptyCell(newRow, newCol)
+                    !this.game.b.isEmptyCell(newRow, newCol - 1)
                 ) {
                     isNewDataValid = false;
                 }
