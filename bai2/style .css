@@ -125,3 +125,8 @@ input:checked+#slide3 {
     display: inline-block;
     cursor: pointer;
 }
+
+#footer {
+    background: pink;
+    margin-top: 30px;
+}
