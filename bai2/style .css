@@ -91,7 +91,8 @@ body {
 #swrap {
     position: relative;
     margin-left: 100px;
-    margin-top: 30px;
+   
+    margin-top: 165px;
 }
 
 input[type="radio"] {
