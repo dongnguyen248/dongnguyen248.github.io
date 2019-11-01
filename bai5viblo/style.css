@@ -392,6 +392,9 @@
         background: url(image/ticker.png);
         background-repeat: no-repeat;
         padding: 3px 34px;
+        color: #233148;
+        font-size: 15px;
+        font-family: "Work san";
     }
     
     #option li:nth-child(1) {
@@ -461,23 +464,27 @@
     
     #now-advailable li {
         display: inline-block;
-        margin-top: 90px;
+        margin-top: 80px;
     }
     
     #now-advailable li:nth-child(2) {
-        margin-left: 40px;
+        margin-left: 30px;
     }
     
-    #get-app>a {
-        display: inline-block;
-        height: 70px;
-        line-height: 70px;
-        background: #fb5f75;
-        width: 370px;
-        border-radius: 5px;
-        text-align: center;
+    #get-app #now-advailable>a {
+        position: absolute;
+        display: block;
         font-size: 20px;
-        line-height: 60px;
+        line-height: 70px;
+        color: #ffffff;
+        height: 70px;
+        font-family: "work sans bold", sans-serif;
+        text-transform: uppercase;
+        background-image: linear-gradient(to bottom, #f6387d, #fe7570);
+        padding: 0px 80px;
+        box-shadow: 0px 11px 29px rgba(255, 7, 94, 0.2);
+        bottom: -35px;
+        left: calc(50% - 181px);
         color: #ffffff;
         font-family: "Work San";
         font-weight: 700;
@@ -528,4 +535,24 @@
     
     footer {
         background: #233148;
+    }
+    
+    footer .container {
+        display: flex;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+    
+    footer .container>a {
+        color: #fff;
+    }
+    
+    footer .container ul li:first-child {
+        display: inline-block;
+        margin-left: 100px;
+    }
+    
+    footer .container ul li {
+        display: inline-block;
     }
