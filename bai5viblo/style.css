@@ -35,7 +35,7 @@
     #hero {
         height: 1000px;
         background-color: #0fd5ef;
-        background-image: url(../image/bg1.png), url(../image/Smartphone.png), url(../image/bg.png);
+        background-image: url(image/bg1.png), url(image/Smartphone.png), url(image/bg.png);
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-size: 100%, auto, cover;
         background-position: center bottom, center bottom -80px, center bottom;
@@ -289,7 +289,7 @@
     }
     
     #stable ul li:nth-child(1) a {
-        background: url(/image/heart.png);
+        background: url(image/heart.png);
         background-repeat: no-repeat;
         background-position: 3px 2px;
         height: 70px;
@@ -305,7 +305,7 @@
     }
     
     #stable ul li:nth-child(2) a {
-        background: url(/image/mouse.png);
+        background: url(image/mouse.png);
         background-repeat: no-repeat;
         background-position: 3px 2px;
         height: 70px;
@@ -321,7 +321,7 @@
     }
     
     #stable ul li:nth-child(3) a {
-        background: url(/image/bag.png);
+        background: url(image/bag.png);
         background-repeat: no-repeat;
         background-position: 3px 2px;
         height: 70px;
@@ -337,7 +337,7 @@
     }
     
     #stable ul li:nth-child(4) a {
-        background: url(/image/pan.png);
+        background: url(image/pan.png);
         background-repeat: no-repeat;
         background-position: 3px 2px;
         height: 70px;
@@ -416,7 +416,7 @@
     /* css for get-app */
     
     #get-app {
-        background: url(/image/bg.png);
+        background: url(image/bg.png);
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
