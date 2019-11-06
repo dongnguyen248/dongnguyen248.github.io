@@ -126,6 +126,7 @@ header>div {
     display: inline-block;
     border: 1px solid #fff;
     margin-top: 40px;
+
 }
 
 
@@ -156,6 +157,8 @@ header>div {
     line-height: 27px;
     border-radius: 4px;
     color: #6a6d89;
+    padding-left :28px;
+    padding-bottom:40px;
 }
 
 #marketing .container div:nth-child(2) h3 {
@@ -177,6 +180,8 @@ header>div {
     font-family: "Work san regular", sans-serif;
     border-radius: 4px;
     color: #6a6d89;
+    padding-left :28px;
+    padding-bottom:40px;
 }
 
 #marketing .container div:nth-child(3) h3 {
@@ -198,6 +203,8 @@ header>div {
     font-family: "Work san regular", sans-serif;
     border-radius: 4px;
     color: #6a6d89;
+    padding-left :28px;
+    padding-bottom:40px;
 }
 
 #marketing .container div:nth-child(4) h3 {
@@ -219,6 +226,8 @@ header>div {
     font-family: "Work san regular", sans-serif;
     border-radius: 4px;
     color: #6a6d89;
+    padding-left :28px;
+    padding-bottom:40px;
 }
 
 #marketing .container div:nth-child(5) h3 {
@@ -561,6 +570,10 @@ header>div {
     height: 50px;
     width: 575px;
     border: 0px;
+    outline:none;
+    padding: 0px 20px;
+    font-size:14px;
+    text-aline:center;
 }
 
 #get-in-touch form button {
