@@ -1,0 +1,19 @@
++ responsive:
+media query : css3
+@media screen and(max-width:960px){
+// tất cả các thuộc tính trong này sẽ được áp dụng cho màn hiinhf dưới 960px;
+
+}
+
+- break point :
+là các điểm mà giao diện sẽ chuyển sang loại mới.
+
+- 4 loại giao diện:
++ extra large : >1200px; code css đảm bảo đc rồi
++ large :960px =>120px @media screen and (max-width: 1200px){
+
+}
++ medium :768px => 960px màn hình nhỏ => nên tăng font size cho các link như menu.
+
++ small : < 768px;
++ extra small : < 500px
