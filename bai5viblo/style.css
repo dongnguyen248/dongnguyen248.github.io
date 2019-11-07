@@ -1,31 +1,44 @@
+/* === import font=== */
+
+@font-face {
+    font-family: "work sans bold";
+    src: url(fonts/WorkSans-Bold.otf);
+}
+
+@font-face {
+    font-family: "work sans regular";
+    src: url(fonts/WorkSans-Regular.otf);
+}
+
+@font-face {
+    font-family: "work sans Semibold";
+    src: url(fonts/WorkSans-SemiBold.otf);
+}
+
+
+/* === Reset CSS === */
+
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
-li {
+li,
+a {
+    text-decoration: none;
     list-style: none;
 }
 
-a {
-    text-decoration: none;
+.clearfix::after {
+    width: 100%;
+    content: "";
+    clear: both;
+    display: block;
 }
 
-@font-face {
-    font-family: "Work san";
-    src: url(font/WorkSans-Bold.otf);
-}
 
-@font-face {
-    font-family: "Work san semibold";
-    src: url(font/WorkSans-SemiBold.otf);
-}
-
-@font-face {
-    font-family: "Work san regular";
-    src: url(font/WorkSans-Regular.otf);
-}
+/* === css for header=== */
 
 .container {
     max-width: 1150px;
@@ -34,565 +47,458 @@ a {
 
 #hero {
     height: 1000px;
-    background-color: #0fd5ef;
-    background-image: url(image/bg1.png), url(image/Smartphone.png), url(image/bg.png);
+    background-color: #0fd3f0;
+    background: url(images/Smartphone.png), url(images/bg1.png), url(images/bg.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: 100%, auto, cover;
-    background-position: center bottom, center bottom -80px, center bottom;
+    background-size: auto, 100%, cover;
+    background-position: center bottom -72px, center bottom, center bottom;
 }
 
-
-/* CSS for header */
-
-header {
+#hero .container header {
     display: flex;
     justify-content: space-between;
 }
 
-#hero .container li {
+header div {
+    margin-top: 50px;
+}
+
+header li {
     display: inline-block;
-    padding-top: 50px;
+    margin-top: 50px;
+    margin-left: 56px;
+}
+
+header li:first-child {
+    margin-left: 0px;
 }
 
 header a {
-    font-family: "Work san semibold", sans-serif;
-    padding: 0px 30px;
+    height: 40px;
+    line-height: 40px;
+    font-family: "work sans Semibold";
     font-size: 16px;
-    line-height: 24px;
     color: #ffffff;
+}
+
+#hero .container div {
     text-align: center;
 }
 
-header a :last-child {
-    padding-right: 0px;
-}
-
-header>div {
-    padding-top: 48px;
-}
-
-#childhero h1 {
+#hero .container div h1 {
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 9px;
+    font-family: "work sans bold";
     font-size: 45px;
     line-height: 60px;
+    width: 508px;
     color: #ffffff;
-    font-family: "Work San";
-    font-weight: 700;
-    text-align: center;
-    width: 522px;
-    padding-top: 90px;
-    display: block;
-    margin: 0px auto;
 }
 
-#childhero h2 {
+#hero .container div h2 {
+    margin-top: 8px;
+    font-family: "work sans regular";
     font-size: 15px;
     line-height: 27px;
     color: #ffffff;
-    font-family: "Work san regular";
-    font-weight: 400;
-    text-align: center;
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-#childhero a {
-    color: #233148;
-}
-
-#childhero li:nth-child(1) {
+#action a {
+    margin-top: 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-family: "work sans Semibold";
     font-size: 14px;
+    height: 40px;
+    padding: 0px 35px;
     line-height: 40px;
     color: #233148;
-    font-family: "Work san regular";
-    font-weight: 600;
-    text-align: center;
-    background: #fff;
-    padding: 0px 34px;
-    border-radius: 5px;
-    display: inline-block;
-    margin-left: 37%;
-    margin-top: 40px;
-    margin-right: 24px;
+    background: #ffffff;
 }
 
-#childhero li:nth-child(2) a {
-    font-size: 14px;
-    line-height: 40px;
-    color: #fff;
-    font-family: "Work san regular";
-    font-weight: 600;
-    text-align: center;
-    padding: 0px 34px;
-    border-radius: 5px;
-    display: inline-block;
-    border: 1px solid #fff;
-    margin-top: 40px;
-
+#action a:nth-child(2) {
+    color: #ffffff;
+    border: 1px #fff solid;
+    background: transparent;
+    margin-left: 27px;
 }
 
 
-/* css for marketing */
+/* === css for feature=== */
 
-#marketing {
+#feature {
     background: #fafafc;
-    height: 980px;
+    height: 1094px;
 }
 
-#marketing .container div:nth-child(1) {
-    float: left;
-    margin-top: 206px;
-}
-
-#marketing .container div:nth-child(2) {
-    margin-left: 165px;
-    margin-top: 41px;
-    width: 270px;
-    height: 320px;
-    background: #ffffff;
-    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
-    float: left;
-    text-align: center;
-    font-family: "Work san regular", sans-serif;
-    padding-top: 60px;
-    font-size: 14px;
-    line-height: 27px;
-    border-radius: 4px;
-    color: #6a6d89;
-    padding-left :28px;
-    padding-bottom:40px;
-    padding-right: 28px;
-}
-
-#marketing .container div:nth-child(2) h3 {
-    margin-top: 25px;
-    margin-bottom: 21px;
-    color: #233148;
-}
-
-#marketing .container div:nth-child(3) {
-    margin-left: 61px;
-    margin-top: 112px;
-    width: 270px;
-    height: 320px;
-    background: #ffffff;
-    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
-    float: left;
-    padding-top: 60px;
-    text-align: center;
-    font-family: "Work san regular", sans-serif;
-    border-radius: 4px;
-    color: #6a6d89;
-    padding-left :28px;
-    padding-bottom:40px;
-    padding-right :28px;
-}
-
-#marketing .container div:nth-child(3) h3 {
-    margin-top: 25px;
-    margin-bottom: 21px;
-    color: #233148;
-}
-
-#marketing .container div:nth-child(4) {
-    margin-left: 110px;
-    margin-top: 2px;
-    width: 270px;
-    height: 320px;
-    background: #ffffff;
-    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
-    float: left;
-    padding-top: 60px;
-    text-align: center;
-    font-family: "Work san regular", sans-serif;
-    border-radius: 4px;
-    color: #6a6d89;
-    padding-left :28px;
-    padding-bottom:40px;
-    padding-right :28px;
-}
-
-#marketing .container div:nth-child(4) h3 {
-    margin-top: 25px;
-    margin-bottom: 21px;
-    color: #233148;
-}
-
-#marketing .container div:nth-child(5) {
-    margin-left: 86px;
-    margin-top: 100px;
-    width: 270px;
-    height: 320px;
-    background: #ffffff;
-    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
-    float: left;
-    text-align: center;
-    padding-top: 60px;
-    font-family: "Work san regular", sans-serif;
-    border-radius: 4px;
-    color: #6a6d89;
-    padding-left :28px;
-    padding-bottom:40px;
-    padding-right :28px;
-}
-
-#marketing .container div:nth-child(5) h3 {
-    margin-top: 25px;
-    margin-bottom: 21px;
-    color: #233148;
-}
-
-
-/* css for everything */
-
-#stable {
-    background: #ffffff;
-    height: 625px;
+#feature .container {
     display: flex;
 }
 
-#stable div h2 {
-    font-family: "Work san", sans-serif;
+#feature .container div:first-child {
+    margin-top: 290px;
+    margin-left: 107px;
+}
+
+#feature .container div>div>h3 {
+    font-family: "work sans Semibold";
+    font-size: 14px;
+    color: #233148;
+    line-height: 27px;
+    padding-top: 30px;
+    padding-bottom: 26px;
+}
+
+#feature .container div>div>p {
+    font-family: "work sans regular";
+    font-size: 14px;
+    color: #6a6d89;
+    line-height: 27px;
+}
+
+
+/* === phần này nên dùng relative and absolute nhé, đây là tập tành thôi=== */
+
+#feature .container div div:nth-child(1) {
+    padding: 60px 28px 38px 28px;
+    width: 270px;
+    height: 324px;
+    background: #ffffff;
+    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
+    text-align: center;
+    color: #6a6d89;
+    margin-top: 113px;
+    margin-left: 163px;
+    border-radius: 2px;
+}
+
+#feature .container div div:nth-child(2) {
+    padding: 60px 28px 38px 28px;
+    width: 270px;
+    height: 324px;
+    background: #ffffff;
+    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
+    text-align: center;
+    color: #6a6d89;
+    margin-top: -222px;
+    margin-left: 493px;
+    border-radius: 2px;
+}
+
+#feature .container div div:nth-child(3) {
+    padding: 60px 28px 38px 28px;
+    width: 270px;
+    height: 324px;
+    background: #ffffff;
+    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
+    text-align: center;
+    color: #6a6d89;
+    margin-top: -26px;
+    margin-left: 95px;
+    border-radius: 2px;
+}
+
+#feature .container div div:nth-child(4) {
+    padding: 60px 28px 38px 28px;
+    width: 270px;
+    height: 324px;
+    background: #ffffff;
+    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
+    text-align: center;
+    color: #6a6d89;
+    margin-top: -200px;
+    margin-left: 446px;
+    border-radius: 2px;
+}
+
+#stable {
+    display: flex;
+    height: 628px;
+}
+
+#stable>div {
+    text-align: right;
+    margin-right: 145px;
+    margin-top: 140px;
+}
+
+#stable>div>h2 {
+    font-family: "work sans bold";
     font-size: 30px;
     line-height: 60px;
     color: #233148;
-    font-weight: 700;
-    text-align: right;
-    padding-top: 155px;
+    padding-bottom: 30px;
 }
 
-#stable div p {
-    color: #6a6d89;
+#stable>div>p {
+    font-family: "work sans reguler";
+    margin-bottom: 25px;
     font-size: 14px;
     line-height: 27px;
     color: #6a6d89;
-    font-family: "Work Sans";
-    font-weight: 400;
-    text-align: right;
-    width: 469px;
-    height: 141px;
 }
 
-#stable div>a {
-    background: #33d2fd;
-    text-align: center;
-    display: inline-block;
-    height: 46px;
-    line-height: 46px;
-    border-radius: 4px;
-    width: 183px;
-    left: 41px;
-    margin-left: 282px;
+#stable>div>a {
+    font-family: "work sans Semibold";
     font-size: 15px;
+    line-height: 51px;
     color: #ffffff;
-    font-family: "Work san regular";
-    font-weight: 600;
-}
-
-#stable ul li a {
-    font-size: 15px;
-    line-height: 27px;
-    color: #233148;
-    font-family: "Work san semibolds";
-    font-weight: 600;
-    display: block;
-    padding-left: 78px;
-    padding-top: 22px;
-}
-
-#stable ul li:nth-child(1) {
-    display: block;
-    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
-    width: 540px;
-    margin-left: 120px;
-    margin-top: 90px;
-    margin-bottom: 20px;
-}
-
-#stable ul li:nth-child(1) a {
-    background: url(image/heart.png);
-    background-repeat: no-repeat;
-    background-position: 3px 2px;
-    height: 70px;
-    background-position: 34px 24px;
-}
-
-#stable ul li:nth-child(2) {
-    display: block;
-    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
-    width: 540px;
-    margin-left: 120px;
-    margin-bottom: 20px;
-}
-
-#stable ul li:nth-child(2) a {
-    background: url(image/mouse.png);
-    background-repeat: no-repeat;
-    background-position: 3px 2px;
-    height: 70px;
-    background-position: 34px 24px;
-}
-
-#stable ul li:nth-child(3) {
-    display: block;
-    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
-    width: 540px;
-    margin-left: 120px;
-    margin-bottom: 20px;
-}
-
-#stable ul li:nth-child(3) a {
-    background: url(image/bag.png);
-    background-repeat: no-repeat;
-    background-position: 3px 2px;
-    height: 70px;
-    background-position: 34px 24px;
-}
-
-#stable ul li:nth-child(4) {
-    display: block;
-    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
-    width: 540px;
-    margin-left: 120px;
-    margin-bottom: 20px;
-}
-
-#stable ul li:nth-child(4) a {
-    background: url(image/pan.png);
-    background-repeat: no-repeat;
-    background-position: 3px 2px;
-    height: 70px;
-    background-position: 34px 24px;
+    padding: 0px 47px;
+    background: #33d2fd;
+    border-radius: 5px;
+    height: 51px;
+    display: inline-block;
 }
 
 #stable ul li p {
     display: none;
-    margin-left: 78px;
-    padding-bottom: 34px;
-    padding-right: 18px;
-    font-family: "Work san regular", sans-serif;
-    color: #fff;
+    padding-left: 75px;
+    padding-right: 110px;
+    padding-bottom: 25px;
 }
 
-#stable li:hover {
-    background-color: #33d2fd;
+#stable ul li {
+    box-shadow: 0px 6px 9px rgba(35, 38, 47, 0.1);
+    margin-bottom: 20px;
+    background: #fff;
 }
 
-#stable li:hover p {
+#stable ul li:first-child {
+    margin-top: 80px;
+}
+
+#stable ul li a {
     display: block;
+    width: 543px;
+    height: 76px;
+    padding-left: 80px;
+    font-size: 15px;
+    color: #233148;
+    font-family: "work sans Semibold";
+    line-height: 76px;
+}
+
+#stable ul li:nth-child(1) a {
+    background: url(images/heart.png);
+    background-repeat: no-repeat;
+    background-position: 30px center;
+}
+
+#stable ul li:nth-child(2) a {
+    background: url(images/mouse.png);
+    background-repeat: no-repeat;
+    background-position: 39px center;
+}
+
+#stable ul li:nth-child(3) a {
+    background: url(images/bag.png);
+    background-repeat: no-repeat;
+    background-position: 30px center;
+}
+
+#stable ul li:nth-child(4) a {
+    background: url(images/pan.png);
+    background-repeat: no-repeat;
+    background-position: 34px center;
+}
+
+#stable ul li:hover {
+    background: #33d2fd;
+}
+
+#stable ul li:hover p {
+    display: inline-block;
 }
 
 
-/* css for everything div */
+/* === CSS for everything=== */
 
 #everything {
-    background-color: #fafafc;
-    height: 475px;
+    background: #fafafc;
 }
 
 #everything .container {
     display: flex;
 }
 
-#everything .container div>img {
+#everything .container div:first-child {
     margin-top: 70px;
-}
-
-#option {
-    padding-top: 95px;
-    margin-left: 150px;
+    margin-left: 17px;
+    margin-right: 148px;
 }
 
 #option h2 {
+    margin-top: 90px;
+    margin-bottom: 47px;
     font-size: 30px;
     line-height: 60px;
     color: #233148;
-    font-family: "Work San";
+    font-family: "work sans bold";
     font-weight: 700;
 }
 
-#option li a {
-    background: url(image/ticker.png);
+#option ul li a {
+    background: url(images/ticker.png);
     background-repeat: no-repeat;
-    padding: 3px 34px;
-    color: #233148;
+    padding-left: 34px;
     font-size: 15px;
-    font-family: "Work san";
-}
-
-#option li:nth-child(1) {
-    padding-top: 50px;
-    padding-bottom: 12px;
-}
-
-#option li:nth-child(2) {
-    padding-top: 12px;
-    padding-bottom: 40px;
+    line-height: 20px;
+    color: #233148;
+    font-weight: 600;
+    display: block;
+    height: 20px;
+    margin-bottom: 20px;
+    font-family: "work sans bold";
 }
 
 #option p {
-    width: 469px;
-    height: 141px;
     font-size: 14px;
     line-height: 27px;
     color: #6a6d89;
-    font-family: "Work san regular";
+    margin-top: 40px;
+    margin-bottom: 82px;
+    font-family: "work sans reguler";
     font-weight: 400;
 }
 
 
-/* css for get-app */
+/* ===CSS for available === */
 
-#get-app {
-    background-color: #0dccf0;
-    background: url(image/bg.png);
+#available {
+    background: url(images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center bottom;
     position: relative;
 }
 
-#get-app .container {
+#available .container {
     display: flex;
 }
 
-#get-app .container div>img {
-    margin-left: 180px;
-    margin-top: 110px;
-    margin-bottom: 95px;
-    margin-right: 80px;
+#available .container div:first-child {
+    padding: 108px 155px 98px 180px;
 }
 
-#now-advailable {
-    margin-left: 80px;
-}
-
-#now-advailable h2 {
-    margin-top: 170px;
+#get-app h2 {
+    margin-top: 275px;
+    margin-bottom: 34px;
     font-size: 30px;
     line-height: 60px;
     color: #233148;
-    font-family: "Work San";
+    font-family: "work sans bold";
     font-weight: 700;
-    text-align: left;
 }
 
-#now-advailable p {
-    width: 471px;
+#get-app p {
     font-size: 14px;
     line-height: 27px;
     color: #ffffff;
-    font-family: "Work san regular";
+    font-family: "work sans reguler";
     font-weight: 400;
-    text-align: left;
+    margin-bottom: 34px;
+    padding-right: 40px;
 }
 
-#now-advailable li {
+#get-app ul li {
     display: inline-block;
-    margin-top: 40px;
+    margin-right: 40px;
 }
 
-#now-advailable li:nth-child(2) {
-    margin-left: 30px;
-}
-
-#get-app #now-advailable>a {
+#get-app>a {
     position: absolute;
-    display: block;
+    top: calc(50% + 350px);
+    left: calc(50% - 155px);
+    background: linear-gradient(to top, #f7407c, #fe7270);
+    padding: 0px 94px;
+    height: 70px;
     font-size: 20px;
     line-height: 70px;
     color: #ffffff;
-    height: 70px;
-    text-transform: uppercase;
-    background-image: linear-gradient(to bottom, #f6387d, #fe7570);
-    padding: 0px 80px;
-    box-shadow: 0px 11px 29px rgba(255, 7, 94, 0.2);
-    bottom: -35px;
-    left: calc(50% - 181px);
-    font-family: "Work San";
     font-weight: 700;
+    font-family: "work sans bold";
+    text-transform: uppercase;
+    box-shadow: 0px 11px 29px rgba(255, 7, 94, 0.2);
 }
 
 #link {
     display: flex;
-    justify-content: space-between;
-    margin-top: 145px;
+    margin-top: 140px;
+    text-align: center;
 }
 
-#link h3 {
+#link div {
+    padding-left: 142px;
+}
+
+#link div h3 {
     font-size: 15px;
     line-height: 27px;
     color: #233148;
-    font-family: "Work san semibold";
+    font-family: "work sans Semibold";
     font-weight: 600;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
-#link a {
+#link div a {
     font-size: 14px;
     line-height: 27px;
     color: #6a6d89;
-    font-family: "Work Sans";
+    font-family: "work sans reguler";
     font-weight: 400;
-}
-
-#link div:nth-child(1) {
-    margin-left: 200px;
-}
-
-#link div:last-child {
-    margin-right: 235px;
 }
 
 #get-in-touch {
     text-align: center;
+    margin-top: 103px;
 }
 
 #get-in-touch h2 {
     font-size: 30px;
     line-height: 60px;
     color: #233148;
-    font-family: "Work san semibold";
+    font-family: "work sans Semibold";
     font-weight: 600;
-    margin-top: 105px;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
 }
 
-#get-in-touch>a {
+#get-in-touch p {
     font-size: 14px;
     line-height: 27px;
     color: #6a6d89;
-    font-family: "Work san regular";
+    font-family: "work sans reguler";
     font-weight: 400;
+    padding-bottom: 70px;
 }
 
-#get-in-touch form {
-    margin-top: 70px;
-    margin-bottom: 90px;
-}
-
-#get-in-touch form input {
-    background-color: #f6f7fb;
-    display: inline-block;
-    height: 50px;
-    width: 575px;
+#get-in-touch input {
+    outline: none;
+    padding: 0px 30px;
     border: 0px;
-    outline:none;
-    padding: 0px 20px;
-    font-size:14px;
-    text-aline:center;
+    background: #f6f7fb;
+    height: 50px;
+    width: 570px;
+    display: inline-block;
+    font-family: "work sans reguler";
+    font-size: 15px;
 }
 
-#get-in-touch form button {
-    background-color: #33d2fd;
-    display: inline-block;
-    height: 50px;
+#get-in-touch button {
     width: 170px;
-    border: 0px;
+    height: 50px;
+    background: #33d2fd;
     font-size: 15px;
     line-height: 27px;
     color: #233148;
-    font-family: "Work san semibold";
+    font-family: "work sans Semibold";
     font-weight: 600;
-    border-radius: 2px;
+    border: 0px;
     margin-left: 30px;
+    margin-bottom: 90px;
 }
 
 footer {
@@ -601,19 +507,22 @@ footer {
 
 footer .container {
     display: flex;
-    height: 100px;
-    line-height: 100px;
-}
-
-footer .container>a {
-    color: #fff;
-}
-
-footer .container ul {
-    margin-left: calc(50% - 39px);
 }
 
 footer .container ul li {
     display: inline-block;
-    margin-right: 45px;
+    padding: 34px;
+}
+
+footer .container>a {
+    height: 100px;
+    display: inline-block;
+    line-height: 100px;
+    font-family: "work sans reguler";
+    font-size: 14px;
+    color: #ffffff;
+}
+
+footer .container ul {
+    margin-left: calc(50% - 100px);
 }
