@@ -1,3 +1,14 @@
+/* === responsive for site=== */
+
+@media (min-width:768px) {}
+
+@media (min-width:1024px) {}
+
+@media (min-width:1280px) {}
+
+@media (min-width:1300px) {}
+
+@media (min-width:1600px) {}
 /* === import font=== */
 
 @font-face {
