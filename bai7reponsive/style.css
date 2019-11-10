@@ -835,6 +835,9 @@
           #feature .container div div:nth-child(5) {
               margin-left: 23px;
           }
+          #stable>div>p {
+              padding: 0px 10px;
+          }
           #everything .container div img {
               height: 228px;
           }
