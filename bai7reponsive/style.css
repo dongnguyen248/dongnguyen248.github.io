@@ -703,7 +703,7 @@
               margin-top: 90px;
           }
           #link div {
-              padding-left: 98px;
+              padding-left: 0px 48px;
           }
           #get-in-touch form input {
               width: 522px;
@@ -769,7 +769,7 @@
               line-height: 60px;
           }
           #link div {
-              padding-left: 46px;
+              padding: 0px 23px;
           }
           #get-in-touch form input {
               width: 360px;
@@ -855,7 +855,7 @@
               line-height: 50px;
           }
           #link div {
-              padding-left: 22px;
+              padding: 0px 11px;
           }
           footer .container>a {
               padding-left: 10px;
