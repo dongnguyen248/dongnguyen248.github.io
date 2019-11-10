@@ -467,6 +467,7 @@
           outline: none;
           padding: 0px 30px;
           border: 0px;
+          color: #6a6d89;
           background: #f6f7fb;
           height: 50px;
           width: 570px;
@@ -666,7 +667,7 @@
               background-size: 129px, 100%, cover;
               height: 630px;
           }
-          #feature .container div:first-child {
+          #feature .container>div:first-child {
               display: none;
           }
           #stable {
@@ -823,6 +824,9 @@
           #feature .container div>div>p {
               text-align: left;
           }
+          #feature .container div div:nth-child(1) {
+              margin-left: 23px;
+          }
           #feature .container div div:nth-child(2) {
               margin-left: 23px;
           }
@@ -830,9 +834,6 @@
               margin-left: 23px;
           }
           #feature .container div div:nth-child(4) {
-              margin-left: 23px;
-          }
-          #feature .container div div:nth-child(5) {
               margin-left: 23px;
           }
           #stable>div>p {
