@@ -915,6 +915,10 @@
               height: 50px;
               line-height: 50px;
           }
+          #get-in-touch form button {
+            margin-left: 0px;
+            width: 100px;
+          }
           #link div {
               padding: 0px 11px;
           }
