@@ -1,0 +1,16 @@
+#slider div img {
+    max-width: 600px;
+    max-height: 300px;
+}
+
+#slider div {
+    display: none;
+}
+
+#slider input:checked+div {
+    display: block;
+}
+
+#slider input {
+    display: none;
+}
