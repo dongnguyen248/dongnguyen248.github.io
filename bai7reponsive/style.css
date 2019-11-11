@@ -50,6 +50,10 @@
           background-position: center bottom -72px, center bottom, center bottom;
       }
       
+      #hero .container #menuphone {
+          display: none;
+      }
+      
       #hero .container header {
           display: flex;
           justify-content: space-between;
@@ -519,6 +523,59 @@
       
       @media screen and (max-width:1200px) {
           /* responsive for device have screen 960 -> 120 */
+          #hero .container #menuphone {
+              display: block;
+          }
+          /* creat menu for phone */
+          #menuphone {
+              padding-top: 3px;
+              padding-left: 3px;
+          }
+          .threeline {
+              background: #fff;
+              height: 3px;
+              width: 20px;
+              margin-top: 2px;
+          }
+          #listMenu {
+              position: fixed;
+              width: 200px;
+              height: 100%;
+              background: #fff;
+              left: -200px;
+              top: 0px;
+              transition: left 0.5s ease-in;
+          }
+          #listMenu a {
+              color: #0fd3f0;
+              font-family: "work sans bold";
+              font-size: 15px;
+              line-height: 30px;
+              font-weight: bold;
+          }
+          #listMenu>label {
+              font-family: Arial, Helvetica, sans-serif;
+              padding-left: 188px;
+          }
+          #mask {
+              position: fixed;
+              height: 100%;
+              width: 100%;
+              left: 0px;
+              top: 0px;
+              background: rgba(0, 0, 0, 0.3);
+              display: none;
+          }
+          #menuSmartphone:checked~ul {
+              left: 0px;
+          }
+          #menuSmartphone:checked~label {
+              display: block;
+          }
+          #menuSmartphone {
+              display: none;
+          }
+          /* end */
           #hero .container header {
               padding: 0px 20px;
           }
@@ -539,7 +596,7 @@
               width: 89%;
               height: auto;
               margin-top: 3px;
-              margin-left: 68px;
+              margin: 0px 28px;
               position: relative;
               margin-top: 60px;
           }
