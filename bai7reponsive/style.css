@@ -526,6 +526,7 @@
           #hero .container #menuphone {
               display: block;
               position: fixed;
+              z-index: 1;
           }
           /* creat menu for phone */
           #menuphone {
