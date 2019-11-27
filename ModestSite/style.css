@@ -1,0 +1,114 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(Fonts/OpenSans-Regular.ttf);
+    font-family: OpenSans-Bold;
+    src: url(Fonts/OpenSans-Bold.ttf);
+    font-family: Quattrocento-Bold;
+    src: url(Fonts/Quattrocento-Bold.ttf);
+}
+
+a,
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+header {
+    background: #1d2126;
+    height: 80px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    padding: 29px 0px;
+}
+
+#menu ul li {
+    padding-right: 40px;
+    display: inline-block;
+}
+
+#menu ul li:last-child {
+    padding-right: 0px;
+}
+
+#menu ul li a {
+    line-height: 80px;
+    color: #a4aead;
+    font-size: 14px;
+    font-family: OpenSans-Regular;
+    padding: 8px;
+    font-weight: 600;
+}
+
+#menu ul li a:hover {
+    border: 2px solid #5a6068;
+    border-radius: 5px;
+}
+
+#menu ul li:first-child a {
+    color: #23b7a4;
+    border: 2px solid #23b7a4;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#baner {
+    background-color: #3d374f;
+    background-image: url(Image/backgrounf.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 660px;
+}
+
+#baner .container h1 {
+    font-family: Quattrocento-Bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
+    padding-top: 226px;
+    padding-bottom: 24px;
+}
+
+#baner .container h3 {
+    font-size: 16px;
+    line-height: 26px;
+    color: #ccd0d7;
+    font-family: OpenSans-Regular;
+    font-weight: 400;
+    width: 654px;
+    padding-bottom: 40px;
+}
+
+#baner .container ul>li {
+    display: inline-block;
+    padding: 13px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#baner .container ul>li a {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+#baner .container ul>li:hover {
+    background-color: #23b7a4;
+    border: none;
+}
