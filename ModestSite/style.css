@@ -422,7 +422,7 @@
         font-family: Quattrocento-Bold;
         padding: 13px 40px;
         background: transparent;
-        border: 2px solid #deb4b4;
+        border: 2px solid #ffffff;
         border-radius: 5px;
         margin-left: 456px;
         margin-bottom: 65px;
@@ -440,7 +440,6 @@
         font-family: Quattrocento-Bold;
         margin-top: 80px;
         text-transform: uppercase;
-        margin-bottom: 90px;
         border-left: 10px solid #e1e5e9;
         padding-left: 15px;
     }
@@ -450,4 +449,246 @@
         width: 255px;
         text-align: center;
         display: inline-block;
+    }
+    
+    #service ul>li>h3 {
+        margin-top: 170px;
+        font-size: 17px;
+        color: #292f36;
+        font-family: Quattrocento-Bold;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+    }
+    
+    #service ul>li>p {
+        width: 263px;
+        height: 99px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #8d8f92;
+        font-family: OpenSans-Regular;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    #service ul:nth-child(2) li:nth-child(1) {
+        background: url(Image/cogs.png);
+        background-repeat: no-repeat;
+        background-position: center 80px;
+        margin-right: 35px;
+    }
+    
+    #service ul:nth-child(2) li:nth-child(2) {
+        background: url(Image/pencil.png);
+        background-repeat: no-repeat;
+        background-position: center 80px;
+        margin-right: 35px;
+    }
+    
+    #service ul:nth-child(2) li:nth-child(3) {
+        background: url(Image/mobile.png);
+        background-repeat: no-repeat;
+        background-position: center 80px;
+        margin-right: 35px;
+    }
+    
+    #service ul:nth-child(2) li:nth-child(4) {
+        background: url(Image/clock.png);
+        background-repeat: no-repeat;
+        background-position: center 80px;
+    }
+    
+    #service ul:nth-child(3) li:nth-child(1) {
+        background: url(Image/cogs.png);
+        background-repeat: no-repeat;
+        background-position: center 80px;
+        margin-right: 35px;
+    }
+    
+    #service ul:nth-child(3) li:nth-child(2) {
+        background: url(Image/pencil.png);
+        background-repeat: no-repeat;
+        background-position: center 80px;
+        margin-right: 35px;
+    }
+    
+    #service ul:nth-child(3) li:nth-child(3) {
+        background: url(Image/mobile.png);
+        background-repeat: no-repeat;
+        background-position: center 80px;
+        margin-right: 35px;
+    }
+    
+    #service ul:nth-child(3) li:nth-child(4) {
+        background: url(Image/clock.png);
+        background-repeat: no-repeat;
+        background-position: center 80px;
+    }
+    /* ==== CSS for feature=============== */
+    
+    #feature {
+        background: #3a454d;
+        margin-top: 165px;
+    }
+    
+    #feature .container>div {
+        padding-top: 85px;
+        padding-bottom: 60px;
+    }
+    
+    #feature .container>div>h2 {
+        font-size: 36px;
+        line-height: 42px;
+        color: #ffffff;
+        font-family: Quattrocento-Bold;
+        text-transform: uppercase;
+        border-left: 10px solid #4d5961;
+        padding-left: 15px;
+    }
+    
+    #feature .container>ul>li {
+        display: inline-block;
+        width: 363px;
+        margin-right: 20px;
+        padding-bottom: 120px;
+    }
+    
+    #feature .container>ul>li:last-child {
+        margin-right: 0px;
+    }
+    
+    #feature .container>ul>li>h3 {
+        font-size: 18px;
+        line-height: 42px;
+        color: #ffffff;
+        font-family: Quattrocento-Bold;
+        text-transform: uppercase;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+    #feature .container>ul>li>p {
+        width: 369px;
+        height: 185px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #dcdfe1;
+        font-family: OpenSans-Regular;
+    }
+    
+    #stayintouch>div:first-child {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+    
+    #stayintouch div h2 {
+        font-size: 36px;
+        line-height: 42px;
+        color: #292f36;
+        font-family: Quattrocento-Bold;
+        border-left: 10px solid #e1e5e9;
+        padding-left: 15px;
+        text-transform: uppercase;
+    }
+    
+    #stayintouch>div:nth-child(3) {
+        display: flex;
+        padding-top: 55px;
+        padding-bottom: 40px;
+    }
+    
+    #stayintouch>div:nth-child(3) h3 {
+        font-size: 20px;
+        line-height: 26px;
+        color: #292f36;
+        font-family: Quattrocento-Bold;
+        padding-left: 15px;
+        padding-bottom: 40px;
+        text-transform: uppercase;
+    }
+    
+    #stayintouch>div:nth-child(3)>div>p {
+        width: 536px;
+        height: 151px;
+        font-size: 16px;
+        line-height: 26px;
+        color: #8d8f92;
+        font-family: OpenSans-Regular;
+    }
+    
+    span {}
+    
+    #formStay {
+        height: 390px;
+        width: 555px;
+        position: relative;
+        left: 50px;
+        top: -200px;
+        background: #ffffff;
+    }
+    
+    #formStay>ul>li {
+        display: inline-block;
+    }
+    
+    #formStay>ul>li>p {
+        font-size: 14px;
+        line-height: 26px;
+        color: #8d8f92;
+        font-family: Quattrocento-Bold;
+        text-transform: uppercase;
+        margin-left: 25px;
+        margin-top: 30px;
+    }
+    
+    #formStay>ul>li>input {
+        background: #eaeef1;
+        outline: none;
+        border: none;
+        width: 245px;
+        height: 45px;
+        padding-left: 15px;
+        font-size: 14px;
+        margin-left: 20px;
+        border-radius: 5px;
+    }
+    
+    #formStay>ul>li:nth-child(3)>input {
+        width: 496px;
+        height: 160px;
+    }
+    
+    #formStay>input {
+        background: #23b7a4;
+        color: #eaeef1;
+        text-align: center;
+        padding: 15px 30px;
+        border: 0px;
+        border-radius: 5px;
+        margin-top: 30px;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+    
+    footer {
+        background: #3a454d;
+        height: 95px;
+    }
+    
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    footer .container a {
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 26px;
+        font-family: OpenSans-Regular;
+        line-height: 95px;
+    }
+    
+    footer .container div>a {
+        padding-left: 20px;
+        padding-top: 40px;
     }
