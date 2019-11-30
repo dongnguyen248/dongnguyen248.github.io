@@ -7,12 +7,12 @@
     @font-face {
         font-family: "OpenSans Semibold";
         src: url(Fonts/OpenSans-Semibold.ttf);
-        font-family: OpenSans-Regular;
-        src: url(Fonts/OpenSans-Regular.ttf);
+        font-family: OpenSans-Regular, sans-serif;
+        src: url(Fonts/OpenSans-Regular, sans-serif.ttf);
         font-family: OpenSans-Bold;
         src: url(Fonts/OpenSans-Bold.ttf);
-        font-family: Quattrocento-Bold;
-        src: url(Fonts/Quattrocento-Bold.ttf);
+        font-family: Quattrocento-Bold, sans-serif;
+        src: url(Fonts/Quattrocento-Bold, sans-serif.ttf);
     }
     
     a,
@@ -80,7 +80,7 @@
     }
     
     #baner .container h1 {
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         font-size: 36px;
         line-height: 42px;
         color: #ffffff;
@@ -92,7 +92,7 @@
         font-size: 16px;
         line-height: 26px;
         color: #ccd0d7;
-        font-family: OpenSans-Regular;
+        font-family: OpenSans-Regular, sans-serif;
         font-weight: 400;
         width: 654px;
         padding-bottom: 40px;
@@ -124,7 +124,7 @@
         margin-top: 80px;
         font-size: 36px;
         color: #292f36;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         border-left: 10px solid #e1e6ea;
         padding-left: 15px;
         margin-bottom: 60px;
@@ -135,7 +135,7 @@
         font-size: 16px;
         line-height: 26px;
         color: #8d8f92;
-        font-family: OpenSans-Regular;
+        font-family: OpenSans-Regular, sans-serif;
         margin-right: 36px;
     }
     
@@ -185,7 +185,7 @@
         font-size: 18px;
         line-height: 42px;
         color: #292f36;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         text-transform: uppercase;
     }
     
@@ -194,7 +194,7 @@
         font-size: 16px;
         line-height: 26px;
         color: #8d8f92;
-        font-family: OpenSans-Regular;
+        font-family: OpenSans-Regular, sans-serif;
     }
     
     #about>div {
@@ -211,7 +211,7 @@
         margin-top: 80px;
         font-size: 36px;
         color: #292f36;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         border-left: 10px solid #e1e6ea;
         padding-left: 15px;
         margin-bottom: 60px;
@@ -231,7 +231,7 @@
     #meetTeam ul li h3 {
         font-size: 16px;
         color: #292f36;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         padding-left: 20px;
         background: #e1e6ea;
         padding-top: 20px;
@@ -317,7 +317,7 @@
         font-size: 36px;
         line-height: 42px;
         color: #ffffff;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         text-transform: uppercase;
         border-left: 10px solid #4d5961;
         padding-left: 15px;
@@ -413,13 +413,17 @@
     
     #workPicture>ul>li:hover a {
         display: inline-block;
+        width: 362px;
+        height: 212px;
+        color: #292f36;
+        text-decoration: underline;
     }
     
     #work .container div:nth-child(3)>a {
         font-size: 14px;
         line-height: 28px;
         color: #ffffff;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         padding: 13px 40px;
         background: transparent;
         border: 2px solid #ffffff;
@@ -437,7 +441,7 @@
         font-size: 36px;
         line-height: 42px;
         color: #292f36;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         margin-top: 80px;
         text-transform: uppercase;
         border-left: 10px solid #e1e5e9;
@@ -455,7 +459,7 @@
         margin-top: 170px;
         font-size: 17px;
         color: #292f36;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         padding-bottom: 30px;
         text-transform: uppercase;
     }
@@ -466,7 +470,7 @@
         font-size: 16px;
         line-height: 26px;
         color: #8d8f92;
-        font-family: OpenSans-Regular;
+        font-family: OpenSans-Regular, sans-serif;
         font-weight: 400;
         text-align: center;
     }
@@ -540,7 +544,7 @@
         font-size: 36px;
         line-height: 42px;
         color: #ffffff;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         text-transform: uppercase;
         border-left: 10px solid #4d5961;
         padding-left: 15px;
@@ -561,7 +565,7 @@
         font-size: 18px;
         line-height: 42px;
         color: #ffffff;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         text-transform: uppercase;
         margin-top: 50px;
         margin-bottom: 30px;
@@ -573,7 +577,7 @@
         font-size: 16px;
         line-height: 26px;
         color: #dcdfe1;
-        font-family: OpenSans-Regular;
+        font-family: OpenSans-Regular, sans-serif;
     }
     
     #stayintouch>div:first-child {
@@ -585,7 +589,7 @@
         font-size: 36px;
         line-height: 42px;
         color: #292f36;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         border-left: 10px solid #e1e5e9;
         padding-left: 15px;
         text-transform: uppercase;
@@ -601,7 +605,7 @@
         font-size: 20px;
         line-height: 26px;
         color: #292f36;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         padding-left: 15px;
         padding-bottom: 40px;
         text-transform: uppercase;
@@ -613,14 +617,13 @@
         font-size: 16px;
         line-height: 26px;
         color: #8d8f92;
-        font-family: OpenSans-Regular;
+        font-family: OpenSans-Regular, sans-serif;
     }
- #stayintouch iframe {
+    
+    #stayintouch iframe {
         width: 100%;
         height: 350px;
     }
-    
-    span {}
     
     #formStay {
         height: 390px;
@@ -639,7 +642,7 @@
         font-size: 14px;
         line-height: 26px;
         color: #8d8f92;
-        font-family: Quattrocento-Bold;
+        font-family: Quattrocento-Bold, sans-serif;
         text-transform: uppercase;
         margin-left: 25px;
         margin-top: 30px;
@@ -688,7 +691,7 @@
         color: #ffffff;
         font-size: 14px;
         line-height: 26px;
-        font-family: OpenSans-Regular;
+        font-family: OpenSans-Regular, sans-serif, sans-serif;
         line-height: 95px;
     }
     
@@ -696,3 +699,4 @@
         padding-left: 20px;
         padding-top: 40px;
     }
+    /* ==============reposvive========================== */
