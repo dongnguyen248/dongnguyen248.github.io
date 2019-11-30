@@ -413,10 +413,6 @@
     
     #workPicture>ul>li:hover a {
         display: inline-block;
-        width: 362px;
-        height: 212px;
-        color: #292f36;
-        text-decoration: underline;
     }
     
     #work .container div:nth-child(3)>a {
