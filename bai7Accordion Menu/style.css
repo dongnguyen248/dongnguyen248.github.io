@@ -31,28 +31,31 @@ body {
     left: 70px;
 }
 
-.submenu a {
+.mainmenu>li>a {
     color: #fff;
     font-size: 14px;
     padding: 8px 8px 8px 32px;
     display: block;
-}
-
-.submenu>ul {
-    padding: 10px;
-}
-
-.submenu>a {
     border-bottom: 1px solid #cdcdcd;
     border-top: 1px solid #cdcdcd;
+    /* transition: max-height 1s ; */
 }
 
-.submenu a:hover {
+.mainmenu>li>ul {
+    /* padding: 10px; */
+    max-height: 0;
+    transition: max-height 1s;
+    overflow: hidden;
+}
+
+.mainmenu>li>a:hover {
     background: #fff;
     color: #1e73be;
     font-size: 20px;
+    height: max-content;
 }
 
-.submenu ul {
-    display: none;
+.accordion>ul>li>a {
+    color: #fff;
+    padding: 15px
 }
