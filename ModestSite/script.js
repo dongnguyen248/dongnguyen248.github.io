@@ -1,8 +1,8 @@
 var slideIndex;
 var sliders = document.getElementsByClassName("slider");
 var dots = document.getElementsByClassName("dot");
-console.log(dots)
-console.log(sliders)
+//console.log(dots)
+//console.log(sliders)
 
 function sliderShow() {
     for (var i = 0; i < sliders.length; i++) {
@@ -15,7 +15,7 @@ function sliderShow() {
     }
     sliders[slideIndex].style.display = "block";
     dots[slideIndex].className += " active";
-    console.log(slideIndex)
+    //console.log(slideIndex)
     slideIndex++;
 
     if (slideIndex > sliders.length - 1) {
