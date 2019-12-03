@@ -7,12 +7,12 @@
     @font-face {
         font-family: "OpenSans Semibold";
         src: url(Fonts/OpenSans-Semibold.ttf);
-        font-family: OpenSans-Regular, sans-serif;
-        src: url(Fonts/OpenSans-Regular, sans-serif.ttf);
+        font-family: OpenSans-Regular;
+        src: url(Fonts/OpenSans-Regular.ttf);
         font-family: OpenSans-Bold;
         src: url(Fonts/OpenSans-Bold.ttf);
-        font-family: Quattrocento-Bold, sans-serif;
-        src: url(Fonts/Quattrocento-Bold, sans-serif.ttf);
+        font-family: Quattrocento-Bold;
+        src: url(Fonts/Quattrocento-Bold.ttf);
     }
     
     a,
@@ -73,14 +73,46 @@
     
     #baner {
         background-color: #3d374f;
-        background-image: url(Image/backgrounf.png);
-        background-repeat: no-repeat;
-        background-position: center bottom;
+        /* background-image: url(Image/backgrounf.png); */
+        /* background-repeat: no-repeat; */
+        /* background-position: center bottom; */
+        height: 660px;
+        position: relative;
+    }
+    
+    #baner .background .slider {
+        display: none;
+    }
+    
+    #baner .background .slider img {
+        width: 100%;
         height: 660px;
     }
     
+    .swrapdot {
+        position: relative;
+        top: -25px;
+    }
+    
+    .dot {
+        display: inline-block;
+        height: 13px;
+        width: 13px;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: background-color 0.3 ease-in;
+        /* z-index: 1; */
+    }
+    
+    .active,
+    .dot:hover {
+        background-color: #bbb;
+    }
+    
     #baner .container h1 {
-        font-family: Quattrocento-Bold, sans-serif;
+        position: absolute;
+        top: 0px;
+        font-family: Quattrocento-Bold;
         font-size: 36px;
         line-height: 42px;
         color: #ffffff;
@@ -89,13 +121,20 @@
     }
     
     #baner .container h3 {
+        position: absolute;
+        top: 292px;
         font-size: 16px;
         line-height: 26px;
         color: #ccd0d7;
-        font-family: OpenSans-Regular, sans-serif;
+        font-family: OpenSans-Regular;
         font-weight: 400;
         width: 654px;
         padding-bottom: 40px;
+    }
+    
+    #baner .container ul {
+        position: absolute;
+        top: 384px;
     }
     
     #baner .container ul>li {
@@ -124,7 +163,7 @@
         margin-top: 80px;
         font-size: 36px;
         color: #292f36;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         border-left: 10px solid #e1e6ea;
         padding-left: 15px;
         margin-bottom: 60px;
@@ -135,7 +174,7 @@
         font-size: 16px;
         line-height: 26px;
         color: #8d8f92;
-        font-family: OpenSans-Regular, sans-serif;
+        font-family: OpenSans-Regular;
         margin-right: 36px;
     }
     
@@ -185,7 +224,7 @@
         font-size: 18px;
         line-height: 42px;
         color: #292f36;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         text-transform: uppercase;
     }
     
@@ -194,7 +233,7 @@
         font-size: 16px;
         line-height: 26px;
         color: #8d8f92;
-        font-family: OpenSans-Regular, sans-serif;
+        font-family: OpenSans-Regular;
     }
     
     #about>div {
@@ -211,7 +250,7 @@
         margin-top: 80px;
         font-size: 36px;
         color: #292f36;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         border-left: 10px solid #e1e6ea;
         padding-left: 15px;
         margin-bottom: 60px;
@@ -219,19 +258,19 @@
     
     #meetTeam>ul>li {
         display: inline-block;
-        width: 262px;
+        width: 263px;
         height: 377px;
         margin-right: 19px;
     }
     
     #meetTeam ul>li>img {
-        width: 262px;
+        width: 263px;
     }
     
     #meetTeam ul li h3 {
         font-size: 16px;
         color: #292f36;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         padding-left: 20px;
         background: #e1e6ea;
         padding-top: 20px;
@@ -317,7 +356,7 @@
         font-size: 36px;
         line-height: 42px;
         color: #ffffff;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         text-transform: uppercase;
         border-left: 10px solid #4d5961;
         padding-left: 15px;
@@ -419,7 +458,7 @@
         font-size: 14px;
         line-height: 28px;
         color: #ffffff;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         padding: 13px 40px;
         background: transparent;
         border: 2px solid #ffffff;
@@ -437,7 +476,7 @@
         font-size: 36px;
         line-height: 42px;
         color: #292f36;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         margin-top: 80px;
         text-transform: uppercase;
         border-left: 10px solid #e1e5e9;
@@ -455,7 +494,7 @@
         margin-top: 170px;
         font-size: 17px;
         color: #292f36;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         padding-bottom: 30px;
         text-transform: uppercase;
     }
@@ -466,7 +505,7 @@
         font-size: 16px;
         line-height: 26px;
         color: #8d8f92;
-        font-family: OpenSans-Regular, sans-serif;
+        font-family: OpenSans-Regular;
         font-weight: 400;
         text-align: center;
     }
@@ -540,7 +579,7 @@
         font-size: 36px;
         line-height: 42px;
         color: #ffffff;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         text-transform: uppercase;
         border-left: 10px solid #4d5961;
         padding-left: 15px;
@@ -561,7 +600,7 @@
         font-size: 18px;
         line-height: 42px;
         color: #ffffff;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         text-transform: uppercase;
         margin-top: 50px;
         margin-bottom: 30px;
@@ -573,7 +612,7 @@
         font-size: 16px;
         line-height: 26px;
         color: #dcdfe1;
-        font-family: OpenSans-Regular, sans-serif;
+        font-family: OpenSans-Regular;
     }
     
     #stayintouch>div:first-child {
@@ -585,7 +624,7 @@
         font-size: 36px;
         line-height: 42px;
         color: #292f36;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         border-left: 10px solid #e1e5e9;
         padding-left: 15px;
         text-transform: uppercase;
@@ -601,7 +640,7 @@
         font-size: 20px;
         line-height: 26px;
         color: #292f36;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         padding-left: 15px;
         padding-bottom: 40px;
         text-transform: uppercase;
@@ -613,12 +652,12 @@
         font-size: 16px;
         line-height: 26px;
         color: #8d8f92;
-        font-family: OpenSans-Regular, sans-serif;
+        font-family: OpenSans-Regular;
     }
     
-    #stayintouch iframe {
+    #stayintouch>iframe {
         width: 100%;
-        height: 350px;
+        height: 450px;
     }
     
     #formStay {
@@ -638,7 +677,7 @@
         font-size: 14px;
         line-height: 26px;
         color: #8d8f92;
-        font-family: Quattrocento-Bold, sans-serif;
+        font-family: Quattrocento-Bold;
         text-transform: uppercase;
         margin-left: 25px;
         margin-top: 30px;
@@ -687,7 +726,7 @@
         color: #ffffff;
         font-size: 14px;
         line-height: 26px;
-        font-family: OpenSans-Regular, sans-serif, sans-serif;
+        font-family: OpenSans-Regular;
         line-height: 95px;
     }
     
@@ -695,4 +734,3 @@
         padding-left: 20px;
         padding-top: 40px;
     }
-    /* ==============reposvive========================== */
