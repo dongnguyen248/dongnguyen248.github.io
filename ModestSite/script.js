@@ -11,13 +11,16 @@ function sliderShow() {
     }
     for (var i = 0; i < dots.length; i++) {
         var dot = dots[i];
+        // delete class css
         dot.className = dot.className.replace(" active", "");
+        
     }
     sliders[slideIndex].style.display = "block";
+    //add css class
     dots[slideIndex].className += " active";
     //console.log(slideIndex)
     slideIndex++;
-
+// reset slideIndex if slideIndex > slider.lengt -1;
     if (slideIndex > sliders.length - 1) {
         slideIndex = 0;
     }
