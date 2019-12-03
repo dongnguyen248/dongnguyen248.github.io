@@ -11,7 +11,7 @@ function sliderShow() {
     }
     for (var i = 0; i < dots.length; i++) {
         var dot = dots[i];
-        dot.className = dot.className.replace(" active");
+        dot.className = dot.className.replace(" active", "");
     }
     sliders[slideIndex].style.display = "block";
     dots[slideIndex].className += " active";
