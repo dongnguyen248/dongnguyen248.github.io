@@ -1,0 +1,128 @@
+/* mobile & tablet */
+@media(max-width:1023px) {
+    :root {
+        --height-navbar: 0px;
+        --height-header: 68px;
+    }
+
+    .header {
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+
+    }
+
+    .hide-on-mobile-table {
+        display: none;
+    }
+
+    .header__cart-list {
+        position: fixed;
+        top: var(--height-header);
+        right: 0;
+        width: 100%;
+        padding: 0 calc((100% - 644px) / 2);
+    }
+
+    .header__cart-list::before {
+        /* display: none; */
+        width: 100%;
+        border-color: transparent;
+    }
+
+    .header__cart-view {
+        text-align: center;
+    }
+
+    .header__sort-bar {
+        display: flex;
+    }
+
+    .app__container {
+        padding-top: calc(var(--height-header) + var(--height-header-sort-bar));
+        ;
+    }
+    .footer__content{
+        padding: 8px 16px;
+    }
+}
+
+/* tablet */
+@media(min-width:740px) and (max-width:1023px) {
+
+    .hide-on-tablet {
+
+        display: none;
+    }
+
+    .header__cart {
+        width: 80px;
+        text-align: right;
+    }
+    .tablet-category{
+        display: block;
+    }
+  
+   
+}
+
+/* mobile */
+@media(max-width:739px) {
+    .hide-on-moble {
+        display: none;
+    }
+
+    .app__content {
+        margin: 0 8px;
+    }
+
+    #header__search-input:checked~.header__search {
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        top: var(--height-header);
+        left: 0;
+        right: 0;
+        animation: historySearch linear 0.3s;
+        height: var(--height-header-sort-bar);
+        box-shadow: 0 1px 2px rgb(0, 0, 0, 0.2);
+    }
+
+    @keyframes historySearch {
+        from {
+            opacity: 0;
+            top: calc(var(--height-header) / 2);
+        }
+
+        to {
+            opacity: 1;
+            top: var(--height-header);
+        }
+    }
+
+    .header__logo,
+    .header__cart {
+        width: unset;
+    }
+
+    .header__logo-img {
+        width: 110px;
+    }
+
+    .header-with__search {
+        justify-content: space-between;
+    }
+
+    .search__history {
+        width: 100%;
+    }
+
+    .pagination-item {
+        padding: 0;
+    }
+    .pagination-item__link{
+        min-width: 32px;
+        font-size: 1.4rem;
+    }
+ 
+}

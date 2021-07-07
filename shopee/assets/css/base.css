@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #ee4d2d;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #bdbdbd;
+    --height-navbar:42px;
+    --height-header:120px;
+    --height-header-sort-bar:46px;
+    --height-header-with-search:calc(var(--height-header) - var(--height-navbar));
+    --star-gold-color:#ffce3e;
+
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 65.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a,
+ul,
+li {
+    list-style: none;
+    padding: 0px;
+    text-decoration: none;
+    margin: 0px;
+    color: inherit;
+
+}
+
+
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes growth {
+    from {
+        transform: var(--growth-from);
+    }
+
+    to {
+        transform: var(--growth-to);
+    }
+}
+
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    display: none;
+    animation: fadeIn linear 0.1s;
+
+}
+
+.modal__overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.modal__body {
+    --growth-from:0.7;
+    --growth-to:1;
+    background: var(--white-color);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    animation: growth linear 0.2s;
+
+}
+
+.form__control {
+    width: 100%;
+    height: 40px;
+    margin-top: 21px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    outline: none;
+}
+
+.form__control:focus {
+    border-color: #888;
+}
+
+.btn {
+     min-width: 124px;
+    height: 34px;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    font-weight: 300px;
+    color: var(--text-color);
+    background: #ffff;
+    cursor: pointer;
+}
+.btn--disable{
+    cursor: default;
+    background: #c3c3c3;
+}
+
+/* pagination */
+.pagination{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.pagination-item{
+    padding: 0 12px;
+}
+.pagination-item__link{
+    --height:30px;
+    min-width: 40px;
+    display: block;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #939393;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    border-radius: 2px;
+}
+.pagination-item__icon{
+
+}
+.pagination-item--active{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+.pagination-item:hover .pagination-item--active{
+    background: #f2684d;
+}
